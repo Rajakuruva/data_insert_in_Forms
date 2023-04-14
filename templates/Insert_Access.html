@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Insert_Access</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="nam">name</label>
+            <select name="name" id="name">
+                {% for b in webs %}
+                    <option value="{{b}}">{{b.name}}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <label for="aut">author</label>
+            <input type="text" name="aut" id="aut">
+            <br><br>
+            <label for="dat">dete</label>
+            <input type="date" name="dat" id="dat">
+            <br><br>
+            <input type="submit" value="Insert_Access">
+        </form>
+    </center>
+</body>
+</html>
