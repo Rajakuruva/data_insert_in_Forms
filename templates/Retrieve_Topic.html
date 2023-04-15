@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Retrieve_data</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="topic">topic_name</label>
+            <select name="topic" id="topic" multiple>
+                {% for a in topic %}
+                    <option value="{{a}}">{{a.topic_name}}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <input type="submit" value="Retrieve">
+        </form>
+    </center>
+</body>
+</html>
+

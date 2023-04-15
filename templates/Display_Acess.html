@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_Acess</h1>
+        <table border="3px">
+            <tr>
+                <th>name</th>
+                <th>author</th>
+                <th>date</th>
+            </tr>
+            {% for ao in acess %}
+                <tr>
+                    <td>{{ao.name}}</td>
+                    <td>{{ao.author}}</td>
+                    <td>{{ao.dete}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

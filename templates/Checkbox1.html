@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Checkbox1</h1>
+        <form action="{% url 'Retrieve_Acess' %}" method="POST">
+            {% csrf_token %}
+            {% for a in webs %}
+                <label for="nm">{{a.name}}</label>
+                <input type="checkbox" name="nm" id="nm" value="{{a}}">
+                <br><br>
+            {% endfor %}
+            <br><br>
+            <input type="submit" value="Check">
+        </form>
+    </center>
+</body>
+</html>

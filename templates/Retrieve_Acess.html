@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Retrieve_Acess</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="nm">name</label>
+            <select name="nm" id="nm" multiple>
+                {% for a in webs %}
+                    <option value="{{a}}">{{a.name}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Retrieve">
+        </form>
+    </center>
+</body>
+</html>

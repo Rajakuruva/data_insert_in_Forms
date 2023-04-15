@@ -22,4 +22,8 @@ urlpatterns = [
     path('Insert_topic/',Insert_topic,name='Insert_topic'),
     path('Insert_webpage/',Insert_webpage,name='Insert_webpage'),
     path('Insert_Access/',Insert_Access,name='Insert_Access'),
+    path('Retrieve_Topic/',Retrieve_Topic,name='Retrieve_Topic'),
+    path('Retrieve_Acess/',Retrieve_Acess,name='Retrieve_Acess'),
+    path('Checkbox/',Checkbox,name='Checkbox'),
+    path('Checkbox1/',Checkbox1,name='Checkbox1'),
 ]
