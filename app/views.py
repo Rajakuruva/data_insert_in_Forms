@@ -81,3 +81,13 @@ def Checkbox1(request):
     d={'webs':wlo}
 
     return render(request,'Checkbox1.html',d)
+
+def RadioButton(request):
+    tlo=Topic.objects.all()
+    d={'topic':tlo}
+    return render(request,'RadioButton.html',d)
+
+def RadioButton1(request):
+    wlo=Webpage.objects.all()
+    d={'webs':wlo}
+    return render(request,'RadioButton1.html',d)

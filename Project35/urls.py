@@ -26,4 +26,6 @@ urlpatterns = [
     path('Retrieve_Acess/',Retrieve_Acess,name='Retrieve_Acess'),
     path('Checkbox/',Checkbox,name='Checkbox'),
     path('Checkbox1/',Checkbox1,name='Checkbox1'),
+    path('RadioButton/',RadioButton,name='RadioButton'),
+    path('RadioButton1/',RadioButton1,name='RadioButton1'),
 ]
